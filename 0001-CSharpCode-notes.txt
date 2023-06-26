@@ -1,0 +1,7 @@
+Hit enter next to the private field.
+ - CoPilot will suggest a constructor
+
+Ask CoPilot chat if the code is safe.
+ - CoPilot will respond that it's not
+
+Ask CoPilot to rewrite the code using parameterised sql.
