@@ -1,0 +1,7 @@
+Hit enter inside the function, and show CoPilot generate the code
+
+Delete the generated code and change the method name to multiple.
+Watch it generate new code.
+
+Use CoPilot Chat and ask it to write a unit test for the function.
+

@@ -1,0 +1,38 @@
+    TEST: procedure (PRINCIPAL, RATE, PAYMENT);
+
+        /* Program to generate a loan amortization schedule */
+        DECLARE PRINCIPAL, RATE, PAYMENT FIXED DEC (15,2);
+        DECLARE LENGTH_IN_MONTHS, MONTHS_PASSED FIXED BIN (31); 
+        DECLARE INTEREST_ACCRUED, PRINCIPAL_PAID, 
+            INTEREST_PAID, BALANCE FIXED DEC (15,2);
+
+        /* Set initial values */
+        PRINCIPAL = 10000.00;
+        RATE = 0.05;
+        LENGTH_IN_MONTHS = 60;
+        PAYMENT = 212.47;
+
+        /* Print header */
+        PUT SKIP EDIT('PRINCIPAL', PRINCIPAL) (A(11),A(200));
+        PUT EDIT('RATE', RATE) (A(11),A(200));
+        PUT EDIT('PAYMENT', PAYMENT) (A(11),A(200));
+        PUT EDIT('LENGTH_IN_MONTHS', LENGTH_IN_MONTHS) (A(11),A(200));
+        PUT EDIT('MONTHS_PASSED', MONTHS_PASSED) (A(11),A(200));
+
+        /* Loop through each month */
+        DO MONTHS_PASSED = 1 TO LENGTH_IN_MONTHS;
+            /* Calculate interest accrued */
+            INTEREST_ACCRUED = PRINCIPAL * RATE / 12.0;
+
+            /* Calculate principal and interest paid */
+            INTEREST_PAID = INTEREST_ACCRUED;
+            PRINCIPAL_PAID = PAYMENT - INTEREST_PAID;
+
+            /* Calculate new balance */
+            BALANCE = PRINCIPAL - PRINCIPAL_PAID;
+
+            /* Update principal */
+            PRINCIPAL = BALANCE;
+        END;
+
+    END TEST;

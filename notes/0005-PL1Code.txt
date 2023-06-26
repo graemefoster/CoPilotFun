@@ -1,0 +1,5 @@
+Highlight that even languages such as PL/1 can benefit from CoPilot.
+
+Pull up some PL/1 code and ask CoPilot to explain it.
+
+Mention the key points (such as describing PUT SKIP EDIT)

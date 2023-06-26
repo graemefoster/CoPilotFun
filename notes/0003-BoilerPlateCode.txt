@@ -1,0 +1,6 @@
+Explain how context helps Github CoPilot generate its suggestions
+
+Just hit enter inside the empty method.
+
+Show how it has worked out the pattern, and generates similar code to the method before.
+
