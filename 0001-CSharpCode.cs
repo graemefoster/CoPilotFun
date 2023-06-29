@@ -2,10 +2,6 @@ using System.Data;
 
 public class SqlHelper 
 {
-    private string _constr;
-    public SqlHelper(string constr) {
-        _constr = constr;
-    }
 
     public decimal CalculateInterest(Guid productId, string currency) {
         using (var con = new SqlConnection(_constr)) 

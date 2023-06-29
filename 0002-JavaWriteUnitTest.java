@@ -1,4 +1,4 @@
-public class Adder {
+public class Mathematics {
   public int addNumbers(int[] numbers) {
   }
 }

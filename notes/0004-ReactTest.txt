@@ -1,3 +1,0 @@
-Ask CoPilot to write a Playwright test for this component
-
-- Talk about whilst the code isn't perfect, the ideas and time it can save if you aren't certain how to use PlayWright, is huge.

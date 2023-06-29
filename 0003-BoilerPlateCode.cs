@@ -16,6 +16,6 @@ public class GetAccountInfo
         _logger.LogInformation("Exited method {method}", nameof(GetCustomerAccountBalances));
     }
 
-    public IEnumerable<AccountBalance> GetCustomerAccountDetails(Guid customerId) {
+    public IEnumerable<AccountDetails> GetCustomerAccountDetails(Guid customerId) {
     }
 }
